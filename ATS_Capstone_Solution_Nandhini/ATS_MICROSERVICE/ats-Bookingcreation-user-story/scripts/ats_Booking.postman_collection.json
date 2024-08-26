@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "b88e7639-56e3-4ac6-a0bf-848d1fc6f209",
+		"name": "ats_Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37369740"
+	},
+	"item": [
+		{
+			"name": "Bookings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8041/api/Bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"api",
+						"Bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bookings/B0001",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8041/api/Bookings/B0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"api",
+						"Bookings",
+						"B0001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateBooking",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passengerName\": \"Mithu\",\r\n    \"bookingDate\": \"2024-08-23T05:30:00\",\r\n    \"seatNumber\": \"14A\",\r\n    \"ticketCost\": 250.0,\r\n    \"totalAmount\": 250.0,\r\n    \"departureDateTime\": \"2024-09-24 12:00:00\",\r\n    \"arrivalDateTime\": \"2024-09-24 14:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8041/api/Bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"api",
+						"Bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteBooking",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8041/api/Bookings/B0002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"api",
+						"Bookings",
+						"B0002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateBooking",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bookingId\": \"B0001\",\r\n    \"passengerName\": \"Pravi\",\r\n    \"bookingDate\": \"2024-08-23T04:30:00\",\r\n    \"seatNumber\": \"28A\",\r\n    \"ticketCost\": 450.0,\r\n    \"totalAmount\": 450.0,\r\n    \"departureDateTime\": \"2024-10-24 12:00:00\",\r\n    \"arrivalDateTime\": \"2024-10-24 14:00:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8041/api/Bookings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8041",
+					"path": [
+						"api",
+						"Bookings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
